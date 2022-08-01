@@ -1,1 +1,1 @@
-## Repositório para armazenar código realizados durante as monitorias
+## Repositório para armazenar códigos realizados durante as monitorias
