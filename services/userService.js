@@ -4,16 +4,14 @@ const Joi = require('joi');
 const userService = {
   validateBody: (obj) => {
     const schema = Joi.object({
-      "cep": Joi.string().required(),
-      "logradouro": Joi.string().required(),
-      "bairro": Joi.string().required(),
-      "localidade": Joi.string().required(),
-      "uf": Joi.string().min(2).max(2).required(),
+      name: Joi.string().required(),
+      email: Joi.string().email().required(),
+      password: Joi.string().min(6).required()
     });
 
-    const { err, value } = schema.validate(obj);
+    const { error, value } = schema.validate(obj);
 
-    if (err) throw err;
+    if (error) throw error;
 
     return value;
   },
