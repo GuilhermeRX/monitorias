@@ -21,9 +21,9 @@ const cepService = {
       "uf": Joi.string().min(2).max(2).required(),
     });
 
-    const { err, value } = schema.validate(obj);
+    const { error, value } = schema.validate(obj);
 
-    if (err) throw err;
+    if (error) throw error;
 
     return value;
   },
