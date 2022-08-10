@@ -1,0 +1,30 @@
+{
+  "name": "monitorias",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GuilhermeRX/monitorias.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GuilhermeRX/monitorias/issues"
+  },
+  "homepage": "https://github.com/GuilhermeRX/monitorias#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  },
+  "dependencies": {
+    "express": "^4.18.1",
+    "express-async-errors": "^3.1.1",
+    "joi": "^17.6.0",
+    "mysql2": "^2.3.3"
+  }
+}
