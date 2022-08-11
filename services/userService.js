@@ -11,7 +11,12 @@ const userService = {
 
     const { error, value } = schema.validate(obj);
 
-    if (error) throw error;
+    if (error) {
+      const err = new Error('Usuario não existe');
+      err.code = 430;
+      throw err;
+    }
+
 
     return value;
   },

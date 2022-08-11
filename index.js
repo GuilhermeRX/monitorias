@@ -9,8 +9,8 @@ app.use(express.json());
 app.use('/user', userRouter);
 
 app.use((err, req, res, next) => {
-  const { message } = err;
-  res.status(404).json({ message })
+  const { code, message } = err;
+  res.status(code).json({ message });
 })
 
-app.listen(port, () => console.log(`Example app listening on port ${port}!`))
+app.listen(port, () => console.log(`Example app listening on port ${port}!`));
