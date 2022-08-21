@@ -5,8 +5,8 @@ const userRouter = Router();
 
 userRouter.post('/', userController.create)
 userRouter.get('/', userController.findAll)
-userRouter.get('/', userController.findById)
-userRouter.put('/', userController.update)
-userRouter.delete('/', userController.delete)
+userRouter.get('/:id', userController.findById)
+userRouter.put('/:id', userController.update)
+userRouter.delete('/:id', userController.delete)
 
 module.exports = userRouter;

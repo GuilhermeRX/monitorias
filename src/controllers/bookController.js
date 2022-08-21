@@ -1,22 +1,22 @@
 const bookController = {
-  create: () => {
-
+  create: (req, res) => {
+    res.status(201).json()
   },
 
-  delete: () => {
-
+  delete: (req, res) => {
+    res.status(204).json()
   },
 
-  update: () => {
-
+  update: (req, res) => {
+    res.status(200).json()
   },
 
-  findById: () => {
-
+  findById: (req, res) => {
+    res.status(200).json()
   },
 
-  findAll: () => {
-
+  findAll: (req, res) => {
+    res.status(200).json()
   },
 };
 

@@ -5,8 +5,8 @@ const bookRouter = Router();
 
 bookRouter.post('/', bookController.create)
 bookRouter.get('/', bookController.findAll)
-bookRouter.get('/', bookController.findById)
-bookRouter.put('/', bookController.update)
-bookRouter.delete('/', bookController.delete)
+bookRouter.get('/:id', bookController.findById)
+bookRouter.put('/:id', bookController.update)
+bookRouter.delete('/:id', bookController.delete)
 
 module.exports = bookRouter;
