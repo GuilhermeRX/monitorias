@@ -15,4 +15,4 @@ app.use((err, req, res, next) => {
   res.status(400).json({ message })
 })
 
-app.listen(port, () => console.log(`Example app listening on port ${port}!`))
+app.listen(port, () => console.log(`API ONLINE ! Rodando na porta - ${port}!`))

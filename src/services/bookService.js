@@ -1,22 +1,27 @@
+const bookModels = require("../models/booksModel");
+
 const bookService = {
-  create: () => {
-
+  create: async (book) => {
+    const insertId = await bookModels.create(book);
+    return insertId;
   },
 
-  delete: () => {
-
+  delete: async (id) => {
+    await bookModels.delete(id);
   },
 
-  update: () => {
-
+  update: async (book, id) => {
+    await bookModels.update(book, id);
   },
 
-  findById: () => {
-
+  findById: async (id) => {
+    const book = await bookModels.findById(id);
+    return book;
   },
 
-  findAll: () => {
-
+  findAll: async () => {
+    const books = await bookModels.findAll();
+    return books;
   },
 };
 
