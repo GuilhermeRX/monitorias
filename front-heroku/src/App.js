@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import './App.css';
 
 import logo from './logo.svg';
@@ -10,6 +10,10 @@ function App() {
     const data = await users.json();
     setUsers(data);
   }
+
+  useEffect(() => {
+    users()
+  }, [])
 
   return (
     <div className="App">
