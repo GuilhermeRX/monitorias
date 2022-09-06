@@ -1,11 +1,14 @@
+import { useState } from 'react';
 import './App.css';
+
 import logo from './logo.svg';
 
 function App() {
+  const [user, setUsers] = useState([])
   const users = async () => {
     const users = await fetch('https://guilhermerx-back.herokuapp.com/');
     const data = await users.json();
-    return data;
+    setUsers(data);
   }
 
   return (
@@ -13,7 +16,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          {users}
+          {user.map((item) => <p>{item.name}</p>)}
         </p>
         <a
           className="App-link"
