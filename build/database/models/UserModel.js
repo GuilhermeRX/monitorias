@@ -27,3 +27,4 @@ User.init({
     modelName: 'users',
     timestamps: false,
 });
+exports.default = User;
