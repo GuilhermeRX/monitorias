@@ -1,0 +1,38 @@
+{
+  "name": "monitorias",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon ./build/indexClass.js",
+    "db:populate": "npx sequelize db:migrate && npx sequelize db:seed:all",
+    "db:reset": "npx tsc && npx sequelize-cli db:drop && npx sequelize db:create",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GuilhermeRX/monitorias.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GuilhermeRX/monitorias/issues"
+  },
+  "homepage": "https://github.com/GuilhermeRX/monitorias#readme",
+  "dependencies": {
+    "dotenv": "^16.0.2",
+    "express": "^4.18.1",
+    "mysql2": "^2.3.3",
+    "nodemon": "^2.0.19",
+    "sequelize": "^6.21.6"
+  },
+  "devDependencies": {
+    "@tsconfig/node16": "^1.0.3",
+    "@types/express": "^4.17.13",
+    "@types/node": "^18.7.16",
+    "@types/sequelize": "^4.28.14",
+    "sequelize-cli": "^6.4.1",
+    "typescript": "^4.8.3"
+  }
+}
