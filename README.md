@@ -1,1 +1,1 @@
-Repositório de exercicios desenvolvidos durante a monitoria.
+Repositório de exercicios desenvolvidos durante as monitorias.
