@@ -1,0 +1,43 @@
+{
+  "name": "monitorias",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx tsc && node ./build/index.js",
+    "test": "mocha -r ts-node/register src/tests/unit/**/*.test.ts --exit -t 60000",
+    "test:coverage": "nyc npm run test:dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GuilhermeRX/monitorias.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GuilhermeRX/monitorias/issues"
+  },
+  "homepage": "https://github.com/GuilhermeRX/monitorias#readme",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-async-errors": "^3.1.1",
+    "mongoose": "^6.6.5",
+    "zod": "^3.19.1"
+  },
+  "devDependencies": {
+    "@istanbuljs/nyc-config-typescript": "^1.0.2",
+    "@tsconfig/node16": "^1.0.3",
+    "@types/chai": "^4.3.3",
+    "@types/express": "^4.17.14",
+    "@types/mocha": "^10.0.0",
+    "@types/sinon": "^10.0.13",
+    "chai": "^4.3.6",
+    "mocha": "^10.1.0",
+    "nyc": "^15.1.0",
+    "sinon": "^14.0.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.8.4"
+  }
+}
